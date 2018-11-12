@@ -1,0 +1,15 @@
+.card-mec {
+    max-width: 45%;
+    min-width: 45%;
+    display: inline-grid;
+    min-height: 200px;
+}
+.quote{
+    margin: 10px;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+.cost{
+    float:right;
+    margin-right: 25px;
+}

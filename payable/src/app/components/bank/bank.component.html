@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-header>Balance</mat-card-header>
+  <mat-card-content>
+    <mat-form-field id="address-selector" class="address-field">
+      <mat-select name="account" (selectionChange)="refreshBalance()" [(value)]="model.account" placeholder="Address">
+        <mat-option *ngFor="let account of accounts" [value]="account">{{account}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <p>You have <span id="balance">{{model.balance}}</span> ether in your account</p>
+    <p>Total Bank balance <span id="balance">{{model.totalBalance}}</span> ether</p>
+  </mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-header>Deposit money</mat-card-header>
+  <mat-card-content>
+    <mat-form-field>
+      <input type="text" matInput id="amount" placeholder="Amount" (change)="setAmount($event)">
+    </mat-form-field>
+    <button mat-button color="primary" id="send" (click)="sendMoney()">Deposit Money</button>
+  </mat-card-content>
+</mat-card>
+
+
