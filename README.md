@@ -14,7 +14,7 @@
 
 5. Inicia el proyecto angular
 
-    `ng serve --open`
+    `$ ng serve --open`
 
 ## Notas:
 
