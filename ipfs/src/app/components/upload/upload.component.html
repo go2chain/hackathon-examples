@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-header>Your account: {{model.account}}</mat-card-header>
+</mat-card>
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Archivo actual</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="model.src" alt="Actual hash image">
+</mat-card>
+<mat-card>
+  <mat-card-header>Send File</mat-card-header>
+  <mat-card-content>
+    <input type="file" accept="image/png, image/jpeg" (change)="captureFile($event)">
+    <button mat-button id="send" (click)="sendFile()">Send File</button>
+  </mat-card-content>
+</mat-card>

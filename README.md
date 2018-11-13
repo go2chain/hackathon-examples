@@ -10,7 +10,7 @@
 
 4. Despliega el contrato mediante truffle
 
-    `$ truffle migrate --network ganache`
+    `$ truffle migrate --network ganache --reset`
 
 5. Inicia el proyecto angular
 
@@ -20,3 +20,4 @@
 
 * Asegurate de tener instalado nodejs, truffle, ganache y angular+.
 * Comprueba que metamask lo tienes en la red de ganache y con alguna cuenta cargada.
+* Si tienes problemas con el nonce al hacer transferencias, cambia de cuenta, cambia de red y vuelve Ganache y por último, cambia el network id en la configuración de Ganache.

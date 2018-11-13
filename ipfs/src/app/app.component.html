@@ -1,0 +1,5 @@
+<mat-toolbar color="primary">Angular Truffle Box</mat-toolbar>
+<div *ngIf="loading" class="spinner-div">
+    <div class="spinner lds-hourglass"></div>
+</div>
+<app-upload [loading]="loading" (toggleLoading)="toggleLoading($event)"></app-upload>
